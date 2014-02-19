@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Getting Started Extension's Popup</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <!--<link rel="stylesheet" type="text/css" href="new.css">-->
+
+
+    <script src="jquery-2.1.0.min.js"></script>
+    <script src="board_item_manager.js"></script>
+    <script src="popup.js"></script>
+  </head>
+  
+  <body>
+    <div class="header">
+      <img alt="Charles Care" class="avatar buffer-right user_30675_thumb" src="https://d589j1w8ayj7e.cloudfront.net/attachments/users/photos/thumb/30675/2f475eef8bdb3b5de895d23fc51db755.png">
+      <img class="logo" src="icon-small.png" />
+    </div>
+    <div class="container">
+      
+    </div>
+<!--<div class="header">Add to your boards</div>
+<button id='add-btn'>Add</button>
+<div id='data'></div>
+
+<div id='board_list'>
+  <ul></ul>  
+</div>
+
+<form>
+  <input type="checkbox" value=""></input>
+</form>
+-->
+
+<iframe id="med_frame"></iframe>
+  <form action="http://localhost:3000/api/v1/external_resources" method="post">
+    <input id="url" name="url" type="hidden" value="">
+    <input id="media_file_board_ids" name="board_ids" type="hidden" value="">
+    <div id="boardList"></div>
+    <input type="submit" value="Add">
+  </form>
+
+
+
+  </body>
+</html>
+
