@@ -8,14 +8,7 @@
   "permissions": [
     "tabs",
     "https://www.meducation.net/",
-    "http://localhost:3000/"
-  ],
-
-  "content_scripts": [
-    {
-      "matches": ["https://soundcloud.com/*"],
-      "js": ["jquery.min.js", "content.js"]
-    }
+    "http://localhost:3000/"        
   ],
     
   "browser_action": {
